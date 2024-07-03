@@ -1,0 +1,19 @@
+# Ignore Python virtual environment files
+.venv/
+
+# Ignore PyCharm project files
+.idea/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore log files
+*.log
+
+# Ignore cache files
+__pycache__/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+

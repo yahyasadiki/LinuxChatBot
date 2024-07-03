@@ -1,0 +1,2446 @@
+{
+  "intents": [
+      {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "How are you?", "Good morning", "Good evening"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What can I help you with?", "Hey! What do you need help with?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Farewell"],
+      "responses": ["Goodbye! Have a great day!", "See you later! Take care!", "Farewell!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+    },
+    {
+      "tag": "editor",
+      "patterns": ["I need a text editor", "Suggest a text editor", "Give me a text editor"],
+      "responses": ["For a good text editor, you can use 'vi'. What is the full name of 'vi'?"]
+    },
+
+      {
+          "tag": "&",
+          "patterns": [
+              "&"
+          ],
+          "responses": [
+              "Start a new process in the background"
+          ]
+      },
+      {
+          "tag": "alias",
+          "patterns": [
+              "alias"
+          ],
+          "responses": [
+              "Create an alias \u2022"
+          ]
+      },
+      {
+          "tag": "apropos",
+          "patterns": [
+              "apropos"
+          ],
+          "responses": [
+              "Search Help manual pages (man -k)"
+          ]
+      },
+      {
+          "tag": "apt",
+          "patterns": [
+              "apt"
+          ],
+          "responses": [
+              "Search for and install software packages (Debian/Ubuntu)"
+          ]
+      },
+      {
+          "tag": "apt-get",
+          "patterns": [
+              "apt-get"
+          ],
+          "responses": [
+              "Search for and install software packages (Debian/Ubuntu)"
+          ]
+      },
+      {
+          "tag": "aptitude",
+          "patterns": [
+              "aptitude"
+          ],
+          "responses": [
+              "Search for and install software packages (Debian/Ubuntu)"
+          ]
+      },
+      {
+          "tag": "aspell",
+          "patterns": [
+              "aspell"
+          ],
+          "responses": [
+              "Spell Checker"
+          ]
+      },
+      {
+          "tag": "at",
+          "patterns": [
+              "at"
+          ],
+          "responses": [
+              "Schedule a command to run once at a particular time"
+          ]
+      },
+      {
+          "tag": "awk",
+          "patterns": [
+              "awk"
+          ],
+          "responses": [
+              "Find and Replace text, database sort/validate/index"
+          ]
+      },
+      {
+          "tag": "basename",
+          "patterns": [
+              "basename"
+          ],
+          "responses": [
+              "Strip directory and suffix from filenames"
+          ]
+      },
+      {
+          "tag": "base32",
+          "patterns": [
+              "base32"
+          ],
+          "responses": [
+              "Base32 encode/decode data and print to standard output"
+          ]
+      },
+      {
+          "tag": "base64",
+          "patterns": [
+              "base64"
+          ],
+          "responses": [
+              "Base64 encode/decode data and print to standard output"
+          ]
+      },
+      {
+          "tag": "bash",
+          "patterns": [
+              "bash"
+          ],
+          "responses": [
+              "GNU Bourne-Again SHell"
+          ]
+      },
+      {
+          "tag": "bc",
+          "patterns": [
+              "bc"
+          ],
+          "responses": [
+              "Arbitrary precision calculator language"
+          ]
+      },
+      {
+          "tag": "bg",
+          "patterns": [
+              "bg"
+          ],
+          "responses": [
+              "Send to background"
+          ]
+      },
+      {
+          "tag": "bind",
+          "patterns": [
+              "bind"
+          ],
+          "responses": [
+              "Set or display readline key and function bindings \u2022"
+          ]
+      },
+      {
+          "tag": "break",
+          "patterns": [
+              "break"
+          ],
+          "responses": [
+              "Exit from a loop \u2022"
+          ]
+      },
+      {
+          "tag": "builtin",
+          "patterns": [
+              "builtin"
+          ],
+          "responses": [
+              "Run a shell builtin"
+          ]
+      },
+      {
+          "tag": "bzip2",
+          "patterns": [
+              "bzip2"
+          ],
+          "responses": [
+              "Compress or decompress named file(s)"
+          ]
+      },
+      {
+          "tag": "cal",
+          "patterns": [
+              "cal"
+          ],
+          "responses": [
+              "Display a calendar"
+          ]
+      },
+      {
+          "tag": "caller",
+          "patterns": [
+              "caller"
+          ],
+          "responses": [
+              "Return the context of any active subroutine call \u2022"
+          ]
+      },
+      {
+          "tag": "case",
+          "patterns": [
+              "case"
+          ],
+          "responses": [
+              "Conditionally perform a command"
+          ]
+      },
+      {
+          "tag": "cat",
+          "patterns": [
+              "cat"
+          ],
+          "responses": [
+              "Concatenate and print (display) the content of files"
+          ]
+      },
+      {
+          "tag": "cd",
+          "patterns": [
+              "cd"
+          ],
+          "responses": [
+              "Change Directory"
+          ]
+      },
+      {
+          "tag": "cfdisk",
+          "patterns": [
+              "cfdisk"
+          ],
+          "responses": [
+              "Partition table manipulator for Linux"
+          ]
+      },
+      {
+          "tag": "chattr",
+          "patterns": [
+              "chattr"
+          ],
+          "responses": [
+              "Change file attributes on a Linux file system"
+          ]
+      },
+      {
+          "tag": "chgrp",
+          "patterns": [
+              "chgrp"
+          ],
+          "responses": [
+              "Change group ownership"
+          ]
+      },
+      {
+          "tag": "chmod",
+          "patterns": [
+              "chmod"
+          ],
+          "responses": [
+              "Change access permissions"
+          ]
+      },
+      {
+          "tag": "chown",
+          "patterns": [
+              "chown"
+          ],
+          "responses": [
+              "Change file owner and group"
+          ]
+      },
+      {
+          "tag": "chpasswd",
+          "patterns": [
+              "chpasswd"
+          ],
+          "responses": [
+              "Update passwords in batch mode"
+          ]
+      },
+      {
+          "tag": "chroot",
+          "patterns": [
+              "chroot"
+          ],
+          "responses": [
+              "Run a command with a different root directory"
+          ]
+      },
+      {
+          "tag": "chkconfig",
+          "patterns": [
+              "chkconfig"
+          ],
+          "responses": [
+              "System services (runlevel)"
+          ]
+      },
+      {
+          "tag": "cksum",
+          "patterns": [
+              "cksum"
+          ],
+          "responses": [
+              "Print CRC checksum and byte counts"
+          ]
+      },
+      {
+          "tag": "cmp",
+          "patterns": [
+              "cmp"
+          ],
+          "responses": [
+              "Compare two files"
+          ]
+      },
+      {
+          "tag": "comm",
+          "patterns": [
+              "comm"
+          ],
+          "responses": [
+              "Compare two sorted files line by line"
+          ]
+      },
+      {
+          "tag": "command",
+          "patterns": [
+              "command"
+          ],
+          "responses": [
+              "Run a command - ignoring shell functions \u2022"
+          ]
+      },
+      {
+          "tag": "continue",
+          "patterns": [
+              "continue"
+          ],
+          "responses": [
+              "Resume the next iteration of a loop \u2022"
+          ]
+      },
+      {
+          "tag": "cp",
+          "patterns": [
+              "cp"
+          ],
+          "responses": [
+              "Copy one or more files to another location"
+          ]
+      },
+      {
+          "tag": "cpio",
+          "patterns": [
+              "cpio"
+          ],
+          "responses": [
+              "Copy files to and from archives"
+          ]
+      },
+      {
+          "tag": "cron",
+          "patterns": [
+              "cron"
+          ],
+          "responses": [
+              "Daemon to execute scheduled commands"
+          ]
+      },
+      {
+          "tag": "crontab",
+          "patterns": [
+              "crontab"
+          ],
+          "responses": [
+              "Schedule a command to run at a later time"
+          ]
+      },
+      {
+          "tag": "csplit",
+          "patterns": [
+              "csplit"
+          ],
+          "responses": [
+              "Split a file into context-determined pieces"
+          ]
+      },
+      {
+          "tag": "curl",
+          "patterns": [
+              "curl"
+          ],
+          "responses": [
+              "Transfer data  from or to a server"
+          ]
+      },
+      {
+          "tag": "cut",
+          "patterns": [
+              "cut"
+          ],
+          "responses": [
+              "Divide a file into several parts"
+          ]
+      },
+      {
+          "tag": "date",
+          "patterns": [
+              "date"
+          ],
+          "responses": [
+              "Display or change the date & time"
+          ]
+      },
+      {
+          "tag": "dc",
+          "patterns": [
+              "dc"
+          ],
+          "responses": [
+              "Desk Calculator"
+          ]
+      },
+      {
+          "tag": "dd",
+          "patterns": [
+              "dd"
+          ],
+          "responses": [
+              "Data Duplicator - convert and copy a file, write disk headers, boot records"
+          ]
+      },
+      {
+          "tag": "ddrescue",
+          "patterns": [
+              "ddrescue"
+          ],
+          "responses": [
+              "Data recovery tool"
+          ]
+      },
+      {
+          "tag": "declare",
+          "patterns": [
+              "declare"
+          ],
+          "responses": [
+              "Declare variables and give them attributes \u2022"
+          ]
+      },
+      {
+          "tag": "df",
+          "patterns": [
+              "df"
+          ],
+          "responses": [
+              "Display free disk space"
+          ]
+      },
+      {
+          "tag": "diff",
+          "patterns": [
+              "diff"
+          ],
+          "responses": [
+              "Display the differences between two files"
+          ]
+      },
+      {
+          "tag": "diff3",
+          "patterns": [
+              "diff3"
+          ],
+          "responses": [
+              "Show differences among three files"
+          ]
+      },
+      {
+          "tag": "dig",
+          "patterns": [
+              "dig"
+          ],
+          "responses": [
+              "DNS lookup"
+          ]
+      },
+      {
+          "tag": "dir",
+          "patterns": [
+              "dir"
+          ],
+          "responses": [
+              "Briefly list directory contents"
+          ]
+      },
+      {
+          "tag": "dircolors",
+          "patterns": [
+              "dircolors"
+          ],
+          "responses": [
+              "Colour setup for 'ls'"
+          ]
+      },
+      {
+          "tag": "dirname",
+          "patterns": [
+              "dirname"
+          ],
+          "responses": [
+              "Convert a full pathname to just a path"
+          ]
+      },
+      {
+          "tag": "dirs",
+          "patterns": [
+              "dirs"
+          ],
+          "responses": [
+              "Display list of remembered directories"
+          ]
+      },
+      {
+          "tag": "dos2unix",
+          "patterns": [
+              "dos2unix"
+          ],
+          "responses": [
+              "Windows/MAC to UNIX text file format converter"
+          ]
+      },
+      {
+          "tag": "dmesg",
+          "patterns": [
+              "dmesg"
+          ],
+          "responses": [
+              "Print kernel & driver messages"
+          ]
+      },
+      {
+          "tag": "dpkg",
+          "patterns": [
+              "dpkg"
+          ],
+          "responses": [
+              "Package manager  (Debian/Ubuntu)."
+          ]
+      },
+      {
+          "tag": "du",
+          "patterns": [
+              "du"
+          ],
+          "responses": [
+              "Estimate file space usage"
+          ]
+      },
+      {
+          "tag": "echo",
+          "patterns": [
+              "echo"
+          ],
+          "responses": [
+              "Display message on screen \u2022"
+          ]
+      },
+      {
+          "tag": "egrep",
+          "patterns": [
+              "egrep"
+          ],
+          "responses": [
+              "Search file(s) for lines that match an extended expression"
+          ]
+      },
+      {
+          "tag": "eject",
+          "patterns": [
+              "eject"
+          ],
+          "responses": [
+              "Eject removable media"
+          ]
+      },
+      {
+          "tag": "enable",
+          "patterns": [
+              "enable"
+          ],
+          "responses": [
+              "Enable and disable builtin shell commands \u2022"
+          ]
+      },
+      {
+          "tag": "env",
+          "patterns": [
+              "env"
+          ],
+          "responses": [
+              "Environment variables"
+          ]
+      },
+      {
+          "tag": "eval",
+          "patterns": [
+              "eval"
+          ],
+          "responses": [
+              "Evaluate several commands/arguments"
+          ]
+      },
+      {
+          "tag": "exec",
+          "patterns": [
+              "exec"
+          ],
+          "responses": [
+              "Execute a command"
+          ]
+      },
+      {
+          "tag": "exit",
+          "patterns": [
+              "exit"
+          ],
+          "responses": [
+              "Exit the shell"
+          ]
+      },
+      {
+          "tag": "expand",
+          "patterns": [
+              "expand"
+          ],
+          "responses": [
+              "Convert tabs to spaces"
+          ]
+      },
+      {
+          "tag": "export",
+          "patterns": [
+              "export"
+          ],
+          "responses": [
+              "Set an environment variable"
+          ]
+      },
+      {
+          "tag": "expr",
+          "patterns": [
+              "expr"
+          ],
+          "responses": [
+              "Evaluate expressions"
+          ]
+      },
+      {
+          "tag": "false",
+          "patterns": [
+              "false"
+          ],
+          "responses": [
+              "Do nothing, unsuccessfully"
+          ]
+      },
+      {
+          "tag": "fdformat",
+          "patterns": [
+              "fdformat"
+          ],
+          "responses": [
+              "Low-level format a floppy disk"
+          ]
+      },
+      {
+          "tag": "fdisk",
+          "patterns": [
+              "fdisk"
+          ],
+          "responses": [
+              "Partition table manipulator for Linux"
+          ]
+      },
+      {
+          "tag": "fg",
+          "patterns": [
+              "fg"
+          ],
+          "responses": [
+              "Send job to foreground"
+          ]
+      },
+      {
+          "tag": "fgrep",
+          "patterns": [
+              "fgrep"
+          ],
+          "responses": [
+              "Search file(s) for lines that match a fixed string"
+          ]
+      },
+      {
+          "tag": "file",
+          "patterns": [
+              "file"
+          ],
+          "responses": [
+              "Determine file type"
+          ]
+      },
+      {
+          "tag": "find",
+          "patterns": [
+              "find"
+          ],
+          "responses": [
+              "Search for files that meet a desired criteria"
+          ]
+      },
+      {
+          "tag": "fmt",
+          "patterns": [
+              "fmt"
+          ],
+          "responses": [
+              "Reformat paragraph text"
+          ]
+      },
+      {
+          "tag": "fold",
+          "patterns": [
+              "fold"
+          ],
+          "responses": [
+              "Wrap text to fit a specified width"
+          ]
+      },
+      {
+          "tag": "for",
+          "patterns": [
+              "for"
+          ],
+          "responses": [
+              "Expand words, and execute commands"
+          ]
+      },
+      {
+          "tag": "fsck",
+          "patterns": [
+              "fsck"
+          ],
+          "responses": [
+              "File system consistency check and repair"
+          ]
+      },
+      {
+          "tag": "ftp",
+          "patterns": [
+              "ftp"
+          ],
+          "responses": [
+              "File Transfer Protocol"
+          ]
+      },
+      {
+          "tag": "function",
+          "patterns": [
+              "function"
+          ],
+          "responses": [
+              "Define Function Macros"
+          ]
+      },
+      {
+          "tag": "fuser",
+          "patterns": [
+              "fuser"
+          ],
+          "responses": [
+              "Identify/kill the process that is accessing a file"
+          ]
+      },
+      {
+          "tag": "gawk",
+          "patterns": [
+              "gawk"
+          ],
+          "responses": [
+              "Find and Replace text within file(s)"
+          ]
+      },
+      {
+          "tag": "getopts",
+          "patterns": [
+              "getopts"
+          ],
+          "responses": [
+              "Parse positional parameters"
+          ]
+      },
+      {
+          "tag": "getfacl",
+          "patterns": [
+              "getfacl"
+          ],
+          "responses": [
+              "Get file access control lists"
+          ]
+      },
+      {
+          "tag": "grep",
+          "patterns": [
+              "grep"
+          ],
+          "responses": [
+              "Search file(s) for lines that match a given pattern"
+          ]
+      },
+      {
+          "tag": "groupadd",
+          "patterns": [
+              "groupadd"
+          ],
+          "responses": [
+              "Add a user security group"
+          ]
+      },
+      {
+          "tag": "groupdel",
+          "patterns": [
+              "groupdel"
+          ],
+          "responses": [
+              "Delete a group"
+          ]
+      },
+      {
+          "tag": "groupmod",
+          "patterns": [
+              "groupmod"
+          ],
+          "responses": [
+              "Modify a group"
+          ]
+      },
+      {
+          "tag": "groups",
+          "patterns": [
+              "groups"
+          ],
+          "responses": [
+              "Print group names a user is in"
+          ]
+      },
+      {
+          "tag": "gzip",
+          "patterns": [
+              "gzip"
+          ],
+          "responses": [
+              "Compress or decompress named file(s)"
+          ]
+      },
+      {
+          "tag": "hash",
+          "patterns": [
+              "hash"
+          ],
+          "responses": [
+              "Remember the full pathname of a name argument"
+          ]
+      },
+      {
+          "tag": "head",
+          "patterns": [
+              "head"
+          ],
+          "responses": [
+              "Output the first part of file(s)"
+          ]
+      },
+      {
+          "tag": "history",
+          "patterns": [
+              "history"
+          ],
+          "responses": [
+              "Command History"
+          ]
+      },
+      {
+          "tag": "hostname",
+          "patterns": [
+              "hostname"
+          ],
+          "responses": [
+              "Print or set system name"
+          ]
+      },
+      {
+          "tag": "htop",
+          "patterns": [
+              "htop"
+          ],
+          "responses": [
+              "Interactive process viewer"
+          ]
+      },
+      {
+          "tag": "iconv",
+          "patterns": [
+              "iconv"
+          ],
+          "responses": [
+              "Convert the character set of a file"
+          ]
+      },
+      {
+          "tag": "id",
+          "patterns": [
+              "id"
+          ],
+          "responses": [
+              "Print user and group id's"
+          ]
+      },
+      {
+          "tag": "if",
+          "patterns": [
+              "if"
+          ],
+          "responses": [
+              "Conditionally perform a command"
+          ]
+      },
+      {
+          "tag": "ifconfig",
+          "patterns": [
+              "ifconfig"
+          ],
+          "responses": [
+              "Configure a network interface"
+          ]
+      },
+      {
+          "tag": "ifdown",
+          "patterns": [
+              "ifdown"
+          ],
+          "responses": [
+              "Stop a network interface"
+          ]
+      },
+      {
+          "tag": "ifup",
+          "patterns": [
+              "ifup"
+          ],
+          "responses": [
+              "Start a network interface up"
+          ]
+      },
+      {
+          "tag": "import",
+          "patterns": [
+              "import"
+          ],
+          "responses": [
+              "Capture an X server screen and save the image to file"
+          ]
+      },
+      {
+          "tag": "install",
+          "patterns": [
+              "install"
+          ],
+          "responses": [
+              "Copy files and set attributes"
+          ]
+      },
+      {
+          "tag": "iostat",
+          "patterns": [
+              "iostat"
+          ],
+          "responses": [
+              "Report CPU and i/o statistics"
+          ]
+      },
+      {
+          "tag": "ip",
+          "patterns": [
+              "ip"
+          ],
+          "responses": [
+              "Routing, devices and tunnels"
+          ]
+      },
+      {
+          "tag": "jobs",
+          "patterns": [
+              "jobs"
+          ],
+          "responses": [
+              "List active jobs \u2022"
+          ]
+      },
+      {
+          "tag": "join",
+          "patterns": [
+              "join"
+          ],
+          "responses": [
+              "Join lines on a common field"
+          ]
+      },
+      {
+          "tag": "kill",
+          "patterns": [
+              "kill"
+          ],
+          "responses": [
+              "Kill a process by specifying its PID"
+          ]
+      },
+      {
+          "tag": "killall",
+          "patterns": [
+              "killall"
+          ],
+          "responses": [
+              "Kill processes by name"
+          ]
+      },
+      {
+          "tag": "klist",
+          "patterns": [
+              "klist"
+          ],
+          "responses": [
+              "List cached Kerberos tickets"
+          ]
+      },
+      {
+          "tag": "less",
+          "patterns": [
+              "less"
+          ],
+          "responses": [
+              "Display output one screen at a time"
+          ]
+      },
+      {
+          "tag": "let",
+          "patterns": [
+              "let"
+          ],
+          "responses": [
+              "Perform arithmetic on shell variables \u2022"
+          ]
+      },
+      {
+          "tag": "link",
+          "patterns": [
+              "link"
+          ],
+          "responses": [
+              "Create a link to a file"
+          ]
+      },
+      {
+          "tag": "ln",
+          "patterns": [
+              "ln"
+          ],
+          "responses": [
+              "Create a symbolic link to a file"
+          ]
+      },
+      {
+          "tag": "local",
+          "patterns": [
+              "local"
+          ],
+          "responses": [
+              "Create a function variable \u2022"
+          ]
+      },
+      {
+          "tag": "locate",
+          "patterns": [
+              "locate"
+          ],
+          "responses": [
+              "Find files"
+          ]
+      },
+      {
+          "tag": "logname",
+          "patterns": [
+              "logname"
+          ],
+          "responses": [
+              "Print current login name"
+          ]
+      },
+      {
+          "tag": "logout",
+          "patterns": [
+              "logout"
+          ],
+          "responses": [
+              "Exit a login shell \u2022"
+          ]
+      },
+      {
+          "tag": "look",
+          "patterns": [
+              "look"
+          ],
+          "responses": [
+              "Display lines beginning with a given string"
+          ]
+      },
+      {
+          "tag": "lpc",
+          "patterns": [
+              "lpc"
+          ],
+          "responses": [
+              "Line printer control program"
+          ]
+      },
+      {
+          "tag": "lpr",
+          "patterns": [
+              "lpr"
+          ],
+          "responses": [
+              "Print files"
+          ]
+      },
+      {
+          "tag": "lprm",
+          "patterns": [
+              "lprm"
+          ],
+          "responses": [
+              "Remove jobs from the print queue"
+          ]
+      },
+      {
+          "tag": "lsattr",
+          "patterns": [
+              "lsattr"
+          ],
+          "responses": [
+              "List file attributes on a Linux second extended file system"
+          ]
+      },
+      {
+          "tag": "lsblk",
+          "patterns": [
+              "lsblk"
+          ],
+          "responses": [
+              "List block devices"
+          ]
+      },
+      {
+          "tag": "ls",
+          "patterns": [
+              "ls"
+          ],
+          "responses": [
+              "List information about file(s)"
+          ]
+      },
+      {
+          "tag": "lsof",
+          "patterns": [
+              "lsof"
+          ],
+          "responses": [
+              "List open files"
+          ]
+      },
+      {
+          "tag": "lspci",
+          "patterns": [
+              "lspci"
+          ],
+          "responses": [
+              "List all PCI devices"
+          ]
+      },
+      {
+          "tag": "man",
+          "patterns": [
+              "man"
+          ],
+          "responses": [
+              "Help manual"
+          ]
+      },
+      {
+          "tag": "mapfile",
+          "patterns": [
+              "mapfile"
+          ],
+          "responses": [
+              "Read lines from standard input into an indexed array variable \u2022"
+          ]
+      },
+      {
+          "tag": "mkdir",
+          "patterns": [
+              "mkdir"
+          ],
+          "responses": [
+              "Create new folder(s)"
+          ]
+      },
+      {
+          "tag": "mkfifo",
+          "patterns": [
+              "mkfifo"
+          ],
+          "responses": [
+              "Make FIFOs (named pipes)"
+          ]
+      },
+      {
+          "tag": "mkfile",
+          "patterns": [
+              "mkfile"
+          ],
+          "responses": [
+              "Make a file"
+          ]
+      },
+      {
+          "tag": "mknod",
+          "patterns": [
+              "mknod"
+          ],
+          "responses": [
+              "Make block or character special files"
+          ]
+      },
+      {
+          "tag": "mktemp",
+          "patterns": [
+              "mktemp"
+          ],
+          "responses": [
+              "Make a temporary file"
+          ]
+      },
+      {
+          "tag": "more",
+          "patterns": [
+              "more"
+          ],
+          "responses": [
+              "Display output one screen at a time"
+          ]
+      },
+      {
+          "tag": "most",
+          "patterns": [
+              "most"
+          ],
+          "responses": [
+              "Browse or page through a text file"
+          ]
+      },
+      {
+          "tag": "mount",
+          "patterns": [
+              "mount"
+          ],
+          "responses": [
+              "Mount a file system"
+          ]
+      },
+      {
+          "tag": "mtools",
+          "patterns": [
+              "mtools"
+          ],
+          "responses": [
+              "Manipulate MS-DOS files"
+          ]
+      },
+      {
+          "tag": "mtr",
+          "patterns": [
+              "mtr"
+          ],
+          "responses": [
+              "Network diagnostics (traceroute/ping)"
+          ]
+      },
+      {
+          "tag": "mv",
+          "patterns": [
+              "mv"
+          ],
+          "responses": [
+              "Move or rename files or directories"
+          ]
+      },
+      {
+          "tag": "mmv",
+          "patterns": [
+              "mmv"
+          ],
+          "responses": [
+              "Mass Move and rename (files)"
+          ]
+      },
+      {
+          "tag": "nc",
+          "patterns": [
+              "nc"
+          ],
+          "responses": [
+              "Netcat, read and write data across networks"
+          ]
+      },
+      {
+          "tag": "netstat",
+          "patterns": [
+              "netstat"
+          ],
+          "responses": [
+              "Networking connections/stats"
+          ]
+      },
+      {
+          "tag": "nft",
+          "patterns": [
+              "nft"
+          ],
+          "responses": [
+              "nftables for packet filtering and classification"
+          ]
+      },
+      {
+          "tag": "nice",
+          "patterns": [
+              "nice"
+          ],
+          "responses": [
+              "Set the priority of a command or job"
+          ]
+      },
+      {
+          "tag": "nl",
+          "patterns": [
+              "nl"
+          ],
+          "responses": [
+              "Number lines and write files"
+          ]
+      },
+      {
+          "tag": "nohup",
+          "patterns": [
+              "nohup"
+          ],
+          "responses": [
+              "Run a command immune to hangups"
+          ]
+      },
+      {
+          "tag": "notify-send",
+          "patterns": [
+              "notify-send"
+          ],
+          "responses": [
+              "Send desktop notifications"
+          ]
+      },
+      {
+          "tag": "nslookup",
+          "patterns": [
+              "nslookup"
+          ],
+          "responses": [
+              "Query Internet name servers interactively"
+          ]
+      },
+      {
+          "tag": "open",
+          "patterns": [
+              "open"
+          ],
+          "responses": [
+              "Open a file in its default application"
+          ]
+      },
+      {
+          "tag": "op",
+          "patterns": [
+              "op"
+          ],
+          "responses": [
+              "Operator access"
+          ]
+      },
+      {
+          "tag": "passwd",
+          "patterns": [
+              "passwd"
+          ],
+          "responses": [
+              "Modify a user password"
+          ]
+      },
+      {
+          "tag": "paste",
+          "patterns": [
+              "paste"
+          ],
+          "responses": [
+              "Merge lines of files"
+          ]
+      },
+      {
+          "tag": "Perf",
+          "patterns": [
+              "Perf"
+          ],
+          "responses": [
+              "Performance analysis tools for Linux"
+          ]
+      },
+      {
+          "tag": "ping",
+          "patterns": [
+              "ping"
+          ],
+          "responses": [
+              "Test a network connection"
+          ]
+      },
+      {
+          "tag": "pgrep",
+          "patterns": [
+              "pgrep"
+          ],
+          "responses": [
+              "List processes by name"
+          ]
+      },
+      {
+          "tag": "pkill",
+          "patterns": [
+              "pkill"
+          ],
+          "responses": [
+              "Kill processes by name"
+          ]
+      },
+      {
+          "tag": "popd",
+          "patterns": [
+              "popd"
+          ],
+          "responses": [
+              "Restore the previous value of the current directory"
+          ]
+      },
+      {
+          "tag": "pr",
+          "patterns": [
+              "pr"
+          ],
+          "responses": [
+              "Prepare files for printing"
+          ]
+      },
+      {
+          "tag": "printenv",
+          "patterns": [
+              "printenv"
+          ],
+          "responses": [
+              "Print environment variables"
+          ]
+      },
+      {
+          "tag": "printf",
+          "patterns": [
+              "printf"
+          ],
+          "responses": [
+              "Format and print data \u2022"
+          ]
+      },
+      {
+          "tag": "ps",
+          "patterns": [
+              "ps"
+          ],
+          "responses": [
+              "Process status"
+          ]
+      },
+      {
+          "tag": "pushd",
+          "patterns": [
+              "pushd"
+          ],
+          "responses": [
+              "Save and then change the current directory"
+          ]
+      },
+      {
+          "tag": "pv",
+          "patterns": [
+              "pv"
+          ],
+          "responses": [
+              "Monitor the progress of data through a pipe"
+          ]
+      },
+      {
+          "tag": "pwd",
+          "patterns": [
+              "pwd"
+          ],
+          "responses": [
+              "Print Working Directory"
+          ]
+      },
+      {
+          "tag": "quota",
+          "patterns": [
+              "quota"
+          ],
+          "responses": [
+              "Display disk usage and limits"
+          ]
+      },
+      {
+          "tag": "quotacheck",
+          "patterns": [
+              "quotacheck"
+          ],
+          "responses": [
+              "Scan a file system for disk usage"
+          ]
+      },
+      {
+          "tag": "ram",
+          "patterns": [
+              "ram"
+          ],
+          "responses": [
+              "ram disk device"
+          ]
+      },
+      {
+          "tag": "rar",
+          "patterns": [
+              "rar"
+          ],
+          "responses": [
+              "Archive files with compression"
+          ]
+      },
+      {
+          "tag": "rcp",
+          "patterns": [
+              "rcp"
+          ],
+          "responses": [
+              "Copy files between two machines"
+          ]
+      },
+      {
+          "tag": "read",
+          "patterns": [
+              "read"
+          ],
+          "responses": [
+              "Read a line from standard input \u2022"
+          ]
+      },
+      {
+          "tag": "readarray",
+          "patterns": [
+              "readarray"
+          ],
+          "responses": [
+              "Read from stdin into an array variable \u2022"
+          ]
+      },
+      {
+          "tag": "readonly",
+          "patterns": [
+              "readonly"
+          ],
+          "responses": [
+              "Mark variables/functions as readonly"
+          ]
+      },
+      {
+          "tag": "rename",
+          "patterns": [
+              "rename"
+          ],
+          "responses": [
+              "Rename files"
+          ]
+      },
+      {
+          "tag": "return",
+          "patterns": [
+              "return"
+          ],
+          "responses": [
+              "Exit a shell function"
+          ]
+      },
+      {
+          "tag": "rev",
+          "patterns": [
+              "rev"
+          ],
+          "responses": [
+              "Reverse lines of a file"
+          ]
+      },
+      {
+          "tag": "rm",
+          "patterns": [
+              "rm"
+          ],
+          "responses": [
+              "Remove files"
+          ]
+      },
+      {
+          "tag": "rmdir",
+          "patterns": [
+              "rmdir"
+          ],
+          "responses": [
+              "Remove folder(s)"
+          ]
+      },
+      {
+          "tag": "rsync",
+          "patterns": [
+              "rsync"
+          ],
+          "responses": [
+              "Remote file copy (Synchronize file trees)"
+          ]
+      },
+      {
+          "tag": "screen",
+          "patterns": [
+              "screen"
+          ],
+          "responses": [
+              "Multiplex terminal, run remote shells via ssh"
+          ]
+      },
+      {
+          "tag": "scp",
+          "patterns": [
+              "scp"
+          ],
+          "responses": [
+              "Secure copy (remote file copy)"
+          ]
+      },
+      {
+          "tag": "sdiff",
+          "patterns": [
+              "sdiff"
+          ],
+          "responses": [
+              "Merge two files interactively"
+          ]
+      },
+      {
+          "tag": "sed",
+          "patterns": [
+              "sed"
+          ],
+          "responses": [
+              "Stream Editor"
+          ]
+      },
+      {
+          "tag": "select",
+          "patterns": [
+              "select"
+          ],
+          "responses": [
+              "Accept user choices via keyboard input"
+          ]
+      },
+      {
+          "tag": "seq",
+          "patterns": [
+              "seq"
+          ],
+          "responses": [
+              "Print numeric sequences"
+          ]
+      },
+      {
+          "tag": "set",
+          "patterns": [
+              "set"
+          ],
+          "responses": [
+              "Manipulate shell variables and functions"
+          ]
+      },
+      {
+          "tag": "setfacl",
+          "patterns": [
+              "setfacl"
+          ],
+          "responses": [
+              "Set file access control lists."
+          ]
+      },
+      {
+          "tag": "sha256sum",
+          "patterns": [
+              "sha256sum"
+          ],
+          "responses": [
+              "Compute and check SHA256 (256-bit) checksums"
+          ]
+      },
+      {
+          "tag": "shift",
+          "patterns": [
+              "shift"
+          ],
+          "responses": [
+              "Shift positional parameters"
+          ]
+      },
+      {
+          "tag": "shopt",
+          "patterns": [
+              "shopt"
+          ],
+          "responses": [
+              "Shell Options"
+          ]
+      },
+      {
+          "tag": "shuf",
+          "patterns": [
+              "shuf"
+          ],
+          "responses": [
+              "Generate random permutations"
+          ]
+      },
+      {
+          "tag": "shutdown",
+          "patterns": [
+              "shutdown"
+          ],
+          "responses": [
+              "Shutdown or restart linux"
+          ]
+      },
+      {
+          "tag": "sleep",
+          "patterns": [
+              "sleep"
+          ],
+          "responses": [
+              "Delay for a specified time"
+          ]
+      },
+      {
+          "tag": "slocate",
+          "patterns": [
+              "slocate"
+          ],
+          "responses": [
+              "Find files"
+          ]
+      },
+      {
+          "tag": "sort",
+          "patterns": [
+              "sort"
+          ],
+          "responses": [
+              "Sort text files"
+          ]
+      },
+      {
+          "tag": "source",
+          "patterns": [
+              "source"
+          ],
+          "responses": [
+              "Run commands from a file '.'\u00a0 \u2022"
+          ]
+      },
+      {
+          "tag": "split",
+          "patterns": [
+              "split"
+          ],
+          "responses": [
+              "Split a file into fixed-size pieces"
+          ]
+      },
+      {
+          "tag": "ss",
+          "patterns": [
+              "ss"
+          ],
+          "responses": [
+              "Socket Statistics"
+          ]
+      },
+      {
+          "tag": "ssh",
+          "patterns": [
+              "ssh"
+          ],
+          "responses": [
+              "Secure Shell client (remote login program)"
+          ]
+      },
+      {
+          "tag": "stat",
+          "patterns": [
+              "stat"
+          ],
+          "responses": [
+              "Display file or file system status"
+          ]
+      },
+      {
+          "tag": "strace",
+          "patterns": [
+              "strace"
+          ],
+          "responses": [
+              "Trace system calls and signals"
+          ]
+      },
+      {
+          "tag": "su",
+          "patterns": [
+              "su"
+          ],
+          "responses": [
+              "Substitute user identity"
+          ]
+      },
+      {
+          "tag": "sudo",
+          "patterns": [
+              "sudo"
+          ],
+          "responses": [
+              "Execute a command as another user"
+          ]
+      },
+      {
+          "tag": "sum",
+          "patterns": [
+              "sum"
+          ],
+          "responses": [
+              "Print a checksum for a file"
+          ]
+      },
+      {
+          "tag": "suspend",
+          "patterns": [
+              "suspend"
+          ],
+          "responses": [
+              "Suspend execution of this shell \u2022"
+          ]
+      },
+      {
+          "tag": "sync",
+          "patterns": [
+              "sync"
+          ],
+          "responses": [
+              "Synchronize data on disk with memory"
+          ]
+      },
+      {
+          "tag": "tabs",
+          "patterns": [
+              "tabs"
+          ],
+          "responses": [
+              "Set tabs on a terminal"
+          ]
+      },
+      {
+          "tag": "tail",
+          "patterns": [
+              "tail"
+          ],
+          "responses": [
+              "Output the last part of a file"
+          ]
+      },
+      {
+          "tag": "tar",
+          "patterns": [
+              "tar"
+          ],
+          "responses": [
+              "Store, list or extract files in an archive"
+          ]
+      },
+      {
+          "tag": "tee",
+          "patterns": [
+              "tee"
+          ],
+          "responses": [
+              "Redirect output to multiple files"
+          ]
+      },
+      {
+          "tag": "test",
+          "patterns": [
+              "test"
+          ],
+          "responses": [
+              "Evaluate a conditional expression"
+          ]
+      },
+      {
+          "tag": "time",
+          "patterns": [
+              "time"
+          ],
+          "responses": [
+              "Measure Program running time"
+          ]
+      },
+      {
+          "tag": "timeout",
+          "patterns": [
+              "timeout"
+          ],
+          "responses": [
+              "Run a command with a time limit"
+          ]
+      },
+      {
+          "tag": "times",
+          "patterns": [
+              "times"
+          ],
+          "responses": [
+              "User and system times"
+          ]
+      },
+      {
+          "tag": "tmux",
+          "patterns": [
+              "tmux"
+          ],
+          "responses": [
+              "Terminal multiplexer"
+          ]
+      },
+      {
+          "tag": "touch",
+          "patterns": [
+              "touch"
+          ],
+          "responses": [
+              "Change file timestamps"
+          ]
+      },
+      {
+          "tag": "top",
+          "patterns": [
+              "top"
+          ],
+          "responses": [
+              "List processes running on the system"
+          ]
+      },
+      {
+          "tag": "tput",
+          "patterns": [
+              "tput"
+          ],
+          "responses": [
+              "Set terminal-dependent capabilities, color, position"
+          ]
+      },
+      {
+          "tag": "traceroute",
+          "patterns": [
+              "traceroute"
+          ],
+          "responses": [
+              "Trace Route to Host"
+          ]
+      },
+      {
+          "tag": "trap",
+          "patterns": [
+              "trap"
+          ],
+          "responses": [
+              "Execute a command when the shell receives a signal \u2022"
+          ]
+      },
+      {
+          "tag": "tr",
+          "patterns": [
+              "tr"
+          ],
+          "responses": [
+              "Translate, squeeze, and/or delete characters"
+          ]
+      },
+      {
+          "tag": "true",
+          "patterns": [
+              "true"
+          ],
+          "responses": [
+              "Do nothing, successfully"
+          ]
+      },
+      {
+          "tag": "tsort",
+          "patterns": [
+              "tsort"
+          ],
+          "responses": [
+              "Topological sort"
+          ]
+      },
+      {
+          "tag": "tty",
+          "patterns": [
+              "tty"
+          ],
+          "responses": [
+              "Print filename of terminal on stdin"
+          ]
+      },
+      {
+          "tag": "type",
+          "patterns": [
+              "type"
+          ],
+          "responses": [
+              "Describe a command \u2022"
+          ]
+      },
+      {
+          "tag": "ulimit",
+          "patterns": [
+              "ulimit"
+          ],
+          "responses": [
+              "Limit user resources \u2022"
+          ]
+      },
+      {
+          "tag": "umask",
+          "patterns": [
+              "umask"
+          ],
+          "responses": [
+              "Users file creation mask"
+          ]
+      },
+      {
+          "tag": "unalias",
+          "patterns": [
+              "unalias"
+          ],
+          "responses": [
+              "Remove an alias \u2022"
+          ]
+      },
+      {
+          "tag": "uname",
+          "patterns": [
+              "uname"
+          ],
+          "responses": [
+              "Print system information"
+          ]
+      },
+      {
+          "tag": "unexpand",
+          "patterns": [
+              "unexpand"
+          ],
+          "responses": [
+              "Convert spaces to tabs"
+          ]
+      },
+      {
+          "tag": "uniq",
+          "patterns": [
+              "uniq"
+          ],
+          "responses": [
+              "Uniquify files"
+          ]
+      },
+      {
+          "tag": "units",
+          "patterns": [
+              "units"
+          ],
+          "responses": [
+              "Convert units from one scale to another"
+          ]
+      },
+      {
+          "tag": "unix2dos",
+          "patterns": [
+              "unix2dos"
+          ],
+          "responses": [
+              "UNIX to Windows or MAC text file format converter"
+          ]
+      },
+      {
+          "tag": "unrar",
+          "patterns": [
+              "unrar"
+          ],
+          "responses": [
+              "Extract files from a rar archive"
+          ]
+      },
+      {
+          "tag": "unset",
+          "patterns": [
+              "unset"
+          ],
+          "responses": [
+              "Remove variable or function names"
+          ]
+      },
+      {
+          "tag": "unshar",
+          "patterns": [
+              "unshar"
+          ],
+          "responses": [
+              "Unpack shell archive scripts"
+          ]
+      },
+      {
+          "tag": "until",
+          "patterns": [
+              "until"
+          ],
+          "responses": [
+              "Execute commands (until error)"
+          ]
+      },
+      {
+          "tag": "useradd",
+          "patterns": [
+              "useradd"
+          ],
+          "responses": [
+              "Create new user account"
+          ]
+      },
+      {
+          "tag": "userdel",
+          "patterns": [
+              "userdel"
+          ],
+          "responses": [
+              "Delete a user account"
+          ]
+      },
+      {
+          "tag": "usermod",
+          "patterns": [
+              "usermod"
+          ],
+          "responses": [
+              "Modify user account"
+          ]
+      },
+      {
+          "tag": "users",
+          "patterns": [
+              "users"
+          ],
+          "responses": [
+              "List users currently logged in"
+          ]
+      },
+      {
+          "tag": "uuencode",
+          "patterns": [
+              "uuencode"
+          ],
+          "responses": [
+              "Encode a binary file"
+          ]
+      },
+      {
+          "tag": "uudecode",
+          "patterns": [
+              "uudecode"
+          ],
+          "responses": [
+              "Decode a file created by uuencode"
+          ]
+      },
+      {
+          "tag": "vi",
+          "patterns": [
+              "vi"
+          ],
+          "responses": [
+              "Text Editor"
+          ]
+      },
+      {
+          "tag": "vmstat",
+          "patterns": [
+              "vmstat"
+          ],
+          "responses": [
+              "Report virtual memory statistics"
+          ]
+      },
+      {
+          "tag": "w",
+          "patterns": [
+              "w"
+          ],
+          "responses": [
+              "Show who is logged on and what they are doing"
+          ]
+      },
+      {
+          "tag": "wait",
+          "patterns": [
+              "wait"
+          ],
+          "responses": [
+              "Wait for a process to complete \u2022"
+          ]
+      },
+      {
+          "tag": "watch",
+          "patterns": [
+              "watch"
+          ],
+          "responses": [
+              "Execute/display a program periodically"
+          ]
+      },
+      {
+          "tag": "wc",
+          "patterns": [
+              "wc"
+          ],
+          "responses": [
+              "Print byte, word, and line counts"
+          ]
+      },
+      {
+          "tag": "whereis",
+          "patterns": [
+              "whereis"
+          ],
+          "responses": [
+              "Search the user's $path, man pages and source files for a program"
+          ]
+      },
+      {
+          "tag": "which",
+          "patterns": [
+              "which"
+          ],
+          "responses": [
+              "Search the user's $path for a program file"
+          ]
+      },
+      {
+          "tag": "while",
+          "patterns": [
+              "while"
+          ],
+          "responses": [
+              "Execute commands"
+          ]
+      },
+      {
+          "tag": "who",
+          "patterns": [
+              "who"
+          ],
+          "responses": [
+              "Print all usernames currently logged in"
+          ]
+      },
+      {
+          "tag": "whoami",
+          "patterns": [
+              "whoami"
+          ],
+          "responses": [
+              "Print the current user id and name ('id -un')"
+          ]
+      },
+      {
+          "tag": "write",
+          "patterns": [
+              "write"
+          ],
+          "responses": [
+              "Send a message to another user"
+          ]
+      },
+      {
+          "tag": "xargs",
+          "patterns": [
+              "xargs"
+          ],
+          "responses": [
+              "Execute utility, passing constructed argument list(s)"
+          ]
+      },
+      {
+          "tag": "xdg-open",
+          "patterns": [
+              "xdg-open"
+          ],
+          "responses": [
+              "Open a file or URL in the user's preferred application."
+          ]
+      },
+      {
+          "tag": "xxd",
+          "patterns": [
+              "xxd"
+          ],
+          "responses": [
+              "Make a hexdump or do the reverse"
+          ]
+      },
+      {
+          "tag": "xz",
+          "patterns": [
+              "xz"
+          ],
+          "responses": [
+              "Compress or decompress .xz and .lzma files"
+          ]
+      },
+      {
+          "tag": "yes",
+          "patterns": [
+              "yes"
+          ],
+          "responses": [
+              "Print a string until interrupted"
+          ]
+      },
+      {
+          "tag": "zip",
+          "patterns": [
+              "zip"
+          ],
+          "responses": [
+              "Package and compress (archive) files"
+          ]
+      },
+      {
+          "tag": ".",
+          "patterns": [
+              "."
+          ],
+          "responses": [
+              "Run a command script in the current shell"
+          ]
+      },
+      {
+          "tag": "!!",
+          "patterns": [
+              "!!"
+          ],
+          "responses": [
+              "Run the last command again"
+          ]
+      },
+      {
+          "tag": "###",
+          "patterns": [
+              "###"
+          ],
+          "responses": [
+              "Comment / Remark"
+          ]
+      }
+  ]
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chat-container {
+            background-color: white;
+            width: 40%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .chat-container h1 {
+            text-align: center;
+        }
+
+        .chat-box {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .message {
+            margin: 10px 0;
+        }
+
+        .message.user {
+            text-align: right;
+        }
+
+        .message.bot {
+            text-align: left;
+        }
+
+        .chat-form {
+            display: flex;
+        }
+
+        .chat-form input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .chat-form input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .chat-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <h1>ChatBot</h1>
+        <p>ChatBot is a simple chatbot that can answer linux related questions.</p>
+
+        <div class="chat-box">
+            {% for message in chat_history %}
+                <div class="message {{ message.sender }}">
+                    <strong>{{ message.sender }}:</strong> {{ message.text }}
+                </div>
+            {% endfor %}
+        </div>
+
+        <form class="chat-form" action="/" method="post">
+            <input type="text" name="user_input" placeholder="Type your message here...">
+            <input type="submit" value="Ask">
+        </form>
+    </div>
+
+</body>
+</html>
